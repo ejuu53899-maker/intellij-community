@@ -23,7 +23,9 @@ fi
 # 2. Verify Bazel
 echo "🔍 Checking Bazel..."
 if command -v bazel &> /dev/null; then
-    echo "✅ Bazel found: $(bazel --version)"
+    echo "✅ Bazel found in PATH: $(bazel --version)"
+elif [ -f "./bazel.cmd" ]; then
+    echo "✅ Local bazel.cmd found. Using it for builds."
 else
     echo "❌ Bazel not found. Please install Bazelisk or Bazel."
     exit 1
@@ -39,7 +41,9 @@ fi
 
 # 4. Initialize Plugins
 echo "📦 Initializing Android plugins..."
-if [ -f "./getPlugins.sh" ]; then
+if [ -d "./android" ]; then
+    echo "✅ Android directory already exists. Skipping clone."
+elif [ -f "./getPlugins.sh" ]; then
     ./getPlugins.sh --shallow
     echo "✅ Plugins initialized."
 else
