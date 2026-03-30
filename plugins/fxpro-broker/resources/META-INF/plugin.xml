@@ -34,5 +34,11 @@
             description="View IntelliJ IDEA logs for debugging">
       <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="com.fxpro.broker.StartBackendAction"/>
     </action>
+    <action id="com.fxpro.broker.DeployHostingerAction"
+            class="com.fxpro.broker.DeployHostingerAction"
+            text="Deploy to Hostinger VPS"
+            description="Prepare deployment script for Hostinger VPS">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="com.fxpro.broker.ViewLogsAction"/>
+    </action>
   </actions>
 </idea-plugin>

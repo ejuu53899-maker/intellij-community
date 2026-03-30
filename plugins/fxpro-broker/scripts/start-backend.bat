@@ -1,5 +1,5 @@
 @echo off
-echo === Starting FXPRO Backend (GenX_FX) ===
+echo === Starting All-in-One Desktop Mode Backend ===
 
 where python >nul 2>nul
 if %ERRORLEVEL% neq 0 (
@@ -8,11 +8,11 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-set BACKEND_DIR=genx_fx_backend
+set BACKEND_DIR=all_in_one_backend
 
 if not exist "%BACKEND_DIR%" (
-    echo Backend directory not found. Cloning GenX_FX...
-    git clone https://github.com/ejuu53899-maker/GenX_FX.git "%BACKEND_DIR%"
+    echo Backend directory not found. Cloning from Codeberg...
+    git clone https://codeberg.org/LengKundee/all-in-one-desktop-mode-.git "%BACKEND_DIR%"
 )
 
 if exist "%BACKEND_DIR%" (
@@ -26,9 +26,17 @@ if exist "%BACKEND_DIR%" (
     if exist "venv\Scripts\activate.bat" (
         call venv\Scripts\activate.bat
         echo Verifying dependencies...
-        pip install -r requirements.txt
-        echo Launching GenX_FX main application...
-        python src\main.py
+        if exist "requirements.txt" (
+            pip install -r requirements.txt
+        )
+        echo Launching API main application...
+        if exist "api\main.py" (
+            pip install uvicorn
+            uvicorn api.main:app --host 0.0.0.0 --port 8000
+        ) else (
+            echo Error: api\main.py not found.
+            pause
+        )
     ) else (
         echo Error: Could not find virtual environment activation script.
         pause

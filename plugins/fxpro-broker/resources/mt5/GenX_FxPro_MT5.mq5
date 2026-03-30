@@ -16,7 +16,7 @@
 //---    and add your server URL to the "Allow WebRequest for listed URL" list.
 
 //--- Server settings (edit ServerURL to match your backend URL)
-input string   ServerURL        = "http://localhost:5000"; // Dashboard server URL
+input string   ServerURL        = "http://localhost:8000"; // Dashboard server URL
 input string   BrokerID         = "fxpro";                  // Broker identifier
 input string   AccountNumber    = "530142568";                            // MT5 account number
 input string   BrokerServer     = "FxPro-MT5 Live02";                   // Broker server name

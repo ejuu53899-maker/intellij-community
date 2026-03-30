@@ -1,18 +1,18 @@
 #!/bin/bash
-# Unified Startup Script for GenX_FX Backend
+# Unified Startup Script for All-in-One Desktop Mode Backend (Codeberg)
 
-echo "=== Starting FXPRO Backend (GenX_FX) ==="
+echo "=== Starting All-in-One Desktop Mode Backend ==="
 
 # Check for Python
 if ! command -v python3 &> /dev/null; then
     echo "Error: python3 is not installed."
 else
     # Use the project base path as a stable location
-    BACKEND_DIR="genx_fx_backend"
+    BACKEND_DIR="all_in_one_backend"
 
     if [ ! -d "$BACKEND_DIR" ]; then
-        echo "Backend directory not found. Cloning GenX_FX..."
-        git clone https://github.com/ejuu53899-maker/GenX_FX.git "$BACKEND_DIR"
+        echo "Backend directory not found. Cloning from Codeberg..."
+        git clone https://codeberg.org/LengKundee/all-in-one-desktop-mode-.git "$BACKEND_DIR"
     fi
 
     if [ -d "$BACKEND_DIR" ]; then
@@ -29,13 +29,19 @@ else
 
             # Install dependencies
             echo "Verifying dependencies..."
-            pip install -r requirements.txt
+            if [ -f "requirements.txt" ]; then
+                pip install -r requirements.txt
+            fi
 
             # Start the application
-            echo "Launching GenX_FX main application..."
-            # Use nohup or similar to prevent blocking the IDE if needed,
-            # but for debugging logs, we might keep it in front if run from a terminal
-            python3 src/main.py
+            echo "Launching API main application..."
+            if [ -f "api/main.py" ]; then
+                # Run using uvicorn as suggested by package.json
+                pip install uvicorn
+                uvicorn api.main:app --host 0.0.0.0 --port 8000
+            else
+                echo "Error: api/main.py not found."
+            fi
         else
             echo "Error: Could not activate virtual environment."
         fi

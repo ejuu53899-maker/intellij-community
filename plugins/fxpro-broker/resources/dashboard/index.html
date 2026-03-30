@@ -76,7 +76,7 @@
         <h3>Backend Configuration</h3>
         <div class="form-group">
             <label for="server-url">Server URL (GenX_FX Backend)</label>
-            <input type="text" id="server-url" value="http://localhost:5000" placeholder="http://localhost:5000">
+            <input type="text" id="server-url" value="http://localhost:8000" placeholder="http://localhost:8000">
         </div>
         <button class="btn" id="connect-btn">Connect & Initialize</button>
         <button class="btn btn-secondary" id="check-status-btn">Check Status</button>
@@ -90,9 +90,17 @@
     </div>
 
     <div class="card">
+        <h3>VPS Deployment Status</h3>
+        <p>Deployment Target: <strong>Hostinger VPS</strong></p>
+        <p>Script Location: <code id="script-path">plugins/fxpro-broker/scripts/deploy-hostinger.sh</code></p>
+        <button class="btn btn-secondary" onclick="alert('Copy the script to your VPS and run: bash deploy-hostinger.sh')">View Instructions</button>
+    </div>
+
+    <div class="card">
         <h3>Activity Log</h3>
         <div id="log" class="log-container">
             <div>[System] Dashboard initialized.</div>
+            <div>[Source] Connected to All-in-One Desktop Mode repository.</div>
         </div>
     </div>
 
