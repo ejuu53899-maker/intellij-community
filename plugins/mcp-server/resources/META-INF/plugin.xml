@@ -69,6 +69,9 @@
     <mcpServer.mcpToolset implementation="com.intellij.mcpserver.toolsets.general.SearchToolset" />
     <mcpServer.mcpToolset implementation="com.intellij.mcpserver.toolsets.general.CodeInsightToolset" />
     <mcpServer.mcpToolset implementation="com.intellij.mcpserver.toolsets.general.RefactoringToolset" />
+    <mcpServer.mcpToolset implementation="com.intellij.mcpserver.toolsets.general.GenXToolset" />
+    <mcpServer.mcpToolset implementation="com.intellij.mcpserver.toolsets.general.Mql5OnedriveToolset" />
+    <mcpServer.mcpToolset implementation="com.intellij.mcpserver.toolsets.general.WebTechToolset" />
 
     <registryKey defaultValue="false"
                  description="Detect MCP clients to suggest enable MCP server on project startup"

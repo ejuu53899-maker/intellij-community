@@ -1,0 +1,474 @@
+🏗️ Starting Intelligence IDX Production Build...
+🔨 Building intellij-community MCP server plugin...
+INFO: Invocation ID: f2c8e38a-b923-4273-88d9-0b12901853e0
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+    currently loading: build
+Starting local Bazel server (8.4.2-jb_20251027_92 c0994fe) and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+Loading:
+Loading: 2 packages loaded
+Analyzing: target //:jps-to-bazel (3 packages loaded)
+Analyzing: target //:jps-to-bazel (3 packages loaded, 0 targets configured)
+Analyzing: target //:jps-to-bazel (3 packages loaded, 0 targets configured)
+
+Analyzing: target //:jps-to-bazel (16 packages loaded, 10 targets configured)
+
+Analyzing: target //:jps-to-bazel (27 packages loaded, 10 targets configured)
+
+Analyzing: target //:jps-to-bazel (69 packages loaded, 10 targets configured)
+
+Analyzing: target //:jps-to-bazel (70 packages loaded, 10 targets configured)
+
+Analyzing: target //:jps-to-bazel (83 packages loaded, 235 targets configured)
+
+Analyzing: target //:jps-to-bazel (91 packages loaded, 1179 targets configured)
+
+DEBUG: /home/jules/.cache/JetBrains/MonorepoBazel/69f823c607b317431f7cc794d0039ea8/external/rules_jvm_external+/private/lib/coordinates.bzl:89:18: Assuming dev.zacsweers.autoservice:auto-service-ksp:jar:1.2.0 should be interpreted as dev.zacsweers.autoservice:auto-service-ksp:1.2.0@jar
+Analyzing: target //:jps-to-bazel (120 packages loaded, 3377 targets configured)
+
+Analyzing: target //:jps-to-bazel (202 packages loaded, 4484 targets configured)
+
+Analyzing: target //:jps-to-bazel (300 packages loaded, 4882 targets configured)
+
+Analyzing: target //:jps-to-bazel (327 packages loaded, 4992 targets configured)
+
+Analyzing: target //:jps-to-bazel (349 packages loaded, 5074 targets configured)
+
+Analyzing: target //:jps-to-bazel (357 packages loaded, 5176 targets configured)
+
+INFO: Analyzed target //:jps-to-bazel (357 packages loaded, 5315 targets configured).
+[4 / 21] checking cached actions
+INFO: Found 1 target...
+Target //:jps-to-bazel up-to-date:
+  /home/jules/.cache/JetBrains/MonorepoBazel/69f823c607b317431f7cc794d0039ea8/execroot/_main/bazel-out/k8-fastbuild/bin/jps-to-bazel
+  /home/jules/.cache/JetBrains/MonorepoBazel/69f823c607b317431f7cc794d0039ea8/execroot/_main/bazel-out/k8-fastbuild/bin/jps-to-bazel.jar
+INFO: Elapsed time: 37.983s, Critical Path: 5.19s
+INFO: 1 process: 448 action cache hit, 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: /home/jules/.cache/JetBrains/MonorepoBazel/69f823c607b317431f7cc794d0039ea8/execroot/_main/bazel-out/k8-fastbuild/bin/jps-to-bazel
+Community root: /app
+Ultimate root: null
+M2 repo root: /home/jules/.m2/repository
+Bazel output base: null
+No changes in /app/build/bazel-targets.json
+Loading: 0 packages loaded
+    currently loading: build
+Analyzing: target //build:i_build_target (1 packages loaded, 0 targets configured)
+Analyzing: target //build:i_build_target (1 packages loaded, 0 targets configured)
+
+Analyzing: target //build:i_build_target (1 packages loaded, 398 targets configured)
+
+Analyzing: target //build:i_build_target (7 packages loaded, 1514 targets configured)
+
+Analyzing: target //build:i_build_target (14 packages loaded, 1612 targets configured)
+
+Analyzing: target //build:i_build_target (36 packages loaded, 2401 targets configured)
+
+Analyzing: target //build:i_build_target (115 packages loaded, 4611 targets configured)
+
+Analyzing: target //build:i_build_target (155 packages loaded, 5984 targets configured)
+
+Analyzing: target //build:i_build_target (162 packages loaded, 6004 targets configured)
+
+Analyzing: target //build:i_build_target (164 packages loaded, 6008 targets configured)
+
+Analyzing: target //build:i_build_target (167 packages loaded, 6014 targets configured)
+
+Analyzing: target //build:i_build_target (180 packages loaded, 6052 targets configured)
+
+Analyzing: target //build:i_build_target (181 packages loaded, 6054 targets configured)
+
+Analyzing: target //build:i_build_target (183 packages loaded, 6058 targets configured)
+
+Analyzing: target //build:i_build_target (187 packages loaded, 6066 targets configured)
+
+Analyzing: target //build:i_build_target (190 packages loaded, 6072 targets configured)
+
+Analyzing: target //build:i_build_target (196 packages loaded, 6084 targets configured)
+
+Analyzing: target //build:i_build_target (218 packages loaded, 6163 targets configured)
+
+Analyzing: target //build:i_build_target (231 packages loaded, 6444 targets configured)
+
+Analyzing: target //build:i_build_target (296 packages loaded, 11339 targets configured)
+
+Analyzing: target //build:i_build_target (402 packages loaded, 21118 targets configured)
+
+Analyzing: target //build:i_build_target (437 packages loaded, 22380 targets configured)
+
+Analyzing: target //build:i_build_target (459 packages loaded, 23309 targets configured)
+
+Analyzing: target //build:i_build_target (462 packages loaded, 23754 targets configured)
+
+Analyzing: target //build:i_build_target (464 packages loaded, 23900 targets configured)
+
+Analyzing: target //build:i_build_target (465 packages loaded, 24045 targets configured)
+
+Analyzing: target //build:i_build_target (467 packages loaded, 24080 targets configured)
+
+Analyzing: target //build:i_build_target (470 packages loaded, 24427 targets configured)
+
+Analyzing: target //build:i_build_target (474 packages loaded, 24684 targets configured)
+
+Analyzing: target //build:i_build_target (478 packages loaded, 24692 targets configured)
+
+Analyzing: target //build:i_build_target (480 packages loaded, 24696 targets configured)
+
+Analyzing: target //build:i_build_target (483 packages loaded, 24702 targets configured)
+
+Analyzing: target //build:i_build_target (485 packages loaded, 24706 targets configured)
+
+Analyzing: target //build:i_build_target (490 packages loaded, 24719 targets configured)
+
+Analyzing: target //build:i_build_target (493 packages loaded, 24725 targets configured)
+
+Analyzing: target //build:i_build_target (494 packages loaded, 24727 targets configured)
+
+Analyzing: target //build:i_build_target (497 packages loaded, 24736 targets configured)
+
+Analyzing: target //build:i_build_target (504 packages loaded, 24757 targets configured)
+
+Analyzing: target //build:i_build_target (511 packages loaded, 24781 targets configured)
+
+Analyzing: target //build:i_build_target (518 packages loaded, 24806 targets configured)
+
+Analyzing: target //build:i_build_target (526 packages loaded, 24835 targets configured)
+
+Analyzing: target //build:i_build_target (533 packages loaded, 24860 targets configured)
+
+Analyzing: target //build:i_build_target (545 packages loaded, 24906 targets configured)
+
+Analyzing: target //build:i_build_target (554 packages loaded, 24943 targets configured)
+
+Analyzing: target //build:i_build_target (564 packages loaded, 24977 targets configured)
+
+Analyzing: target //build:i_build_target (571 packages loaded, 25001 targets configured)
+
+Analyzing: target //build:i_build_target (577 packages loaded, 25021 targets configured)
+
+Analyzing: target //build:i_build_target (584 packages loaded, 25043 targets configured)
+
+Analyzing: target //build:i_build_target (590 packages loaded, 25064 targets configured)
+
+Analyzing: target //build:i_build_target (596 packages loaded, 25091 targets configured)
+
+Analyzing: target //build:i_build_target (601 packages loaded, 25103 targets configured)
+
+Analyzing: target //build:i_build_target (604 packages loaded, 25112 targets configured)
+
+Analyzing: target //build:i_build_target (610 packages loaded, 25128 targets configured)
+
+Analyzing: target //build:i_build_target (615 packages loaded, 25142 targets configured)
+
+Analyzing: target //build:i_build_target (617 packages loaded, 25147 targets configured)
+
+Analyzing: target //build:i_build_target (620 packages loaded, 25275 targets configured)
+
+Analyzing: target //build:i_build_target (622 packages loaded, 25585 targets configured)
+
+Analyzing: target //build:i_build_target (626 packages loaded, 25803 targets configured)
+
+Analyzing: target //build:i_build_target (631 packages loaded, 26031 targets configured)
+
+Analyzing: target //build:i_build_target (635 packages loaded, 26597 targets configured)
+
+Analyzing: target //build:i_build_target (639 packages loaded, 26609 targets configured)
+
+Analyzing: target //build:i_build_target (639 packages loaded, 26609 targets configured)
+
+Analyzing: target //build:i_build_target (641 packages loaded, 26613 targets configured)
+
+Analyzing: target //build:i_build_target (647 packages loaded, 26637 targets configured)
+
+Analyzing: target //build:i_build_target (651 packages loaded, 26649 targets configured)
+
+Analyzing: target //build:i_build_target (653 packages loaded, 26653 targets configured)
+
+Analyzing: target //build:i_build_target (656 packages loaded, 26659 targets configured)
+
+Analyzing: target //build:i_build_target (659 packages loaded, 26667 targets configured)
+
+Analyzing: target //build:i_build_target (663 packages loaded, 26678 targets configured)
+
+Analyzing: target //build:i_build_target (668 packages loaded, 26690 targets configured)
+
+Analyzing: target //build:i_build_target (669 packages loaded, 26692 targets configured)
+
+Analyzing: target //build:i_build_target (672 packages loaded, 26700 targets configured)
+
+Analyzing: target //build:i_build_target (675 packages loaded, 26706 targets configured)
+
+Analyzing: target //build:i_build_target (678 packages loaded, 26712 targets configured)
+
+Analyzing: target //build:i_build_target (681 packages loaded, 26720 targets configured)
+
+Analyzing: target //build:i_build_target (681 packages loaded, 26720 targets configured)
+
+Analyzing: target //build:i_build_target (681 packages loaded, 26720 targets configured)
+
+Analyzing: target //build:i_build_target (683 packages loaded, 26726 targets configured)
+
+Analyzing: target //build:i_build_target (684 packages loaded, 26728 targets configured)
+
+Analyzing: target //build:i_build_target (687 packages loaded, 26737 targets configured)
+
+Analyzing: target //build:i_build_target (689 packages loaded, 26747 targets configured)
+
+Analyzing: target //build:i_build_target (692 packages loaded, 26759 targets configured)
+
+Analyzing: target //build:i_build_target (695 packages loaded, 26771 targets configured)
+
+Analyzing: target //build:i_build_target (695 packages loaded, 26771 targets configured)
+
+Analyzing: target //build:i_build_target (697 packages loaded, 26779 targets configured)
+
+Analyzing: target //build:i_build_target (700 packages loaded, 26789 targets configured)
+
+Analyzing: target //build:i_build_target (705 packages loaded, 26807 targets configured)
+
+Analyzing: target //build:i_build_target (714 packages loaded, 26841 targets configured)
+
+Analyzing: target //build:i_build_target (720 packages loaded, 26859 targets configured)
+
+Analyzing: target //build:i_build_target (726 packages loaded, 26880 targets configured)
+
+Analyzing: target //build:i_build_target (732 packages loaded, 26904 targets configured)
+
+Analyzing: target //build:i_build_target (741 packages loaded, 26940 targets configured)
+
+Analyzing: target //build:i_build_target (746 packages loaded, 26961 targets configured)
+
+Analyzing: target //build:i_build_target (752 packages loaded, 26988 targets configured)
+
+Analyzing: target //build:i_build_target (763 packages loaded, 27031 targets configured)
+
+Analyzing: target //build:i_build_target (767 packages loaded, 27045 targets configured)
+
+Analyzing: target //build:i_build_target (771 packages loaded, 27059 targets configured)
+
+Analyzing: target //build:i_build_target (773 packages loaded, 27066 targets configured)
+
+Analyzing: target //build:i_build_target (779 packages loaded, 27087 targets configured)
+
+Analyzing: target //build:i_build_target (784 packages loaded, 27106 targets configured)
+
+Analyzing: target //build:i_build_target (788 packages loaded, 27117 targets configured)
+
+Analyzing: target //build:i_build_target (795 packages loaded, 27138 targets configured)
+
+Analyzing: target //build:i_build_target (801 packages loaded, 27163 targets configured)
+
+Analyzing: target //build:i_build_target (808 packages loaded, 27193 targets configured)
+
+Analyzing: target //build:i_build_target (820 packages loaded, 27239 targets configured)
+
+Analyzing: target //build:i_build_target (825 packages loaded, 27256 targets configured)
+
+Analyzing: target //build:i_build_target (832 packages loaded, 27278 targets configured)
+
+Analyzing: target //build:i_build_target (840 packages loaded, 27312 targets configured)
+
+Analyzing: target //build:i_build_target (852 packages loaded, 27359 targets configured)
+
+Analyzing: target //build:i_build_target (860 packages loaded, 27389 targets configured)
+
+Analyzing: target //build:i_build_target (866 packages loaded, 27411 targets configured)
+
+Analyzing: target //build:i_build_target (872 packages loaded, 27427 targets configured)
+
+Analyzing: target //build:i_build_target (875 packages loaded, 27435 targets configured)
+
+Analyzing: target //build:i_build_target (878 packages loaded, 27441 targets configured)
+
+Analyzing: target //build:i_build_target (882 packages loaded, 27451 targets configured)
+
+Analyzing: target //build:i_build_target (890 packages loaded, 27479 targets configured)
+
+Analyzing: target //build:i_build_target (893 packages loaded, 27490 targets configured)
+
+Analyzing: target //build:i_build_target (901 packages loaded, 27521 targets configured)
+
+Analyzing: target //build:i_build_target (905 packages loaded, 27535 targets configured)
+
+Analyzing: target //build:i_build_target (914 packages loaded, 27571 targets configured)
+
+Analyzing: target //build:i_build_target (920 packages loaded, 27591 targets configured)
+
+Analyzing: target //build:i_build_target (926 packages loaded, 27610 targets configured)
+
+Analyzing: target //build:i_build_target (928 packages loaded, 27618 targets configured)
+
+Analyzing: target //build:i_build_target (935 packages loaded, 27642 targets configured)
+
+Analyzing: target //build:i_build_target (948 packages loaded, 27694 targets configured)
+
+Analyzing: target //build:i_build_target (956 packages loaded, 28059 targets configured)
+
+Analyzing: target //build:i_build_target (966 packages loaded, 28093 targets configured)
+
+Analyzing: target //build:i_build_target (973 packages loaded, 28153 targets configured)
+
+Analyzing: target //build:i_build_target (978 packages loaded, 28174 targets configured)
+
+Analyzing: target //build:i_build_target (983 packages loaded, 28195 targets configured)
+
+Analyzing: target //build:i_build_target (990 packages loaded, 28226 targets configured)
+
+Analyzing: target //build:i_build_target (992 packages loaded, 28235 targets configured)
+
+Analyzing: target //build:i_build_target (995 packages loaded, 28251 targets configured)
+
+Analyzing: target //build:i_build_target (1001 packages loaded, 28280 targets configured)
+
+Analyzing: target //build:i_build_target (1011 packages loaded, 28324 targets configured)
+
+Analyzing: target //build:i_build_target (1019 packages loaded, 28366 targets configured)
+
+Analyzing: target //build:i_build_target (1027 packages loaded, 28420 targets configured)
+
+Analyzing: target //build:i_build_target (1032 packages loaded, 28437 targets configured)
+
+Analyzing: target //build:i_build_target (1036 packages loaded, 28455 targets configured)
+
+Analyzing: target //build:i_build_target (1043 packages loaded, 28487 targets configured)
+
+Analyzing: target //build:i_build_target (1049 packages loaded, 28516 targets configured)
+
+Analyzing: target //build:i_build_target (1055 packages loaded, 28544 targets configured)
+
+Analyzing: target //build:i_build_target (1059 packages loaded, 28560 targets configured)
+
+Analyzing: target //build:i_build_target (1062 packages loaded, 28574 targets configured)
+
+Analyzing: target //build:i_build_target (1064 packages loaded, 28582 targets configured)
+
+Analyzing: target //build:i_build_target (1068 packages loaded, 28599 targets configured)
+
+Analyzing: target //build:i_build_target (1075 packages loaded, 28627 targets configured)
+
+Analyzing: target //build:i_build_target (1083 packages loaded, 28661 targets configured)
+
+Analyzing: target //build:i_build_target (1103 packages loaded, 28780 targets configured)
+
+Analyzing: target //build:i_build_target (1118 packages loaded, 28866 targets configured)
+
+Analyzing: target //build:i_build_target (1127 packages loaded, 28916 targets configured)
+
+Analyzing: target //build:i_build_target (1137 packages loaded, 28961 targets configured)
+
+Analyzing: target //build:i_build_target (1149 packages loaded, 29028 targets configured)
+
+Analyzing: target //build:i_build_target (1166 packages loaded, 29118 targets configured)
+
+Analyzing: target //build:i_build_target (1189 packages loaded, 29233 targets configured)
+
+Analyzing: target //build:i_build_target (1211 packages loaded, 29343 targets configured)
+
+Analyzing: target //build:i_build_target (1233 packages loaded, 29453 targets configured)
+
+Analyzing: target //build:i_build_target (1256 packages loaded, 29566 targets configured)
+
+Analyzing: target //build:i_build_target (1279 packages loaded, 29669 targets configured)
+
+Analyzing: target //build:i_build_target (1301 packages loaded, 29764 targets configured)
+
+Analyzing: target //build:i_build_target (1324 packages loaded, 29862 targets configured)
+
+Analyzing: target //build:i_build_target (1347 packages loaded, 29974 targets configured)
+
+Analyzing: target //build:i_build_target (1370 packages loaded, 30068 targets configured)
+
+Analyzing: target //build:i_build_target (1385 packages loaded, 30135 targets configured)
+
+Analyzing: target //build:i_build_target (1394 packages loaded, 30187 targets configured)
+
+Analyzing: target //build:i_build_target (1400 packages loaded, 30218 targets configured)
+
+Analyzing: target //build:i_build_target (1402 packages loaded, 30230 targets configured)
+
+Analyzing: target //build:i_build_target (1403 packages loaded, 30236 targets configured)
+
+Analyzing: target //build:i_build_target (1410 packages loaded, 30277 targets configured)
+
+Analyzing: target //build:i_build_target (1422 packages loaded, 30350 targets configured)
+
+Analyzing: target //build:i_build_target (1432 packages loaded, 30410 targets configured)
+
+Analyzing: target //build:i_build_target (1440 packages loaded, 30458 targets configured)
+
+Analyzing: target //build:i_build_target (1448 packages loaded, 30498 targets configured)
+
+Analyzing: target //build:i_build_target (1464 packages loaded, 30570 targets configured)
+
+Analyzing: target //build:i_build_target (1486 packages loaded, 30660 targets configured)
+
+Analyzing: target //build:i_build_target (1502 packages loaded, 30727 targets configured)
+
+Analyzing: target //build:i_build_target (1520 packages loaded, 30833 targets configured)
+
+Analyzing: target //build:i_build_target (1543 packages loaded, 30970 targets configured)
+
+Analyzing: target //build:i_build_target (1558 packages loaded, 31060 targets configured)
+
+Analyzing: target //build:i_build_target (1578 packages loaded, 31180 targets configured)
+
+Analyzing: target //build:i_build_target (1594 packages loaded, 31277 targets configured)
+
+Analyzing: target //build:i_build_target (1604 packages loaded, 31337 targets configured)
+
+Analyzing: target //build:i_build_target (1618 packages loaded, 31415 targets configured)
+
+Analyzing: target //build:i_build_target (1639 packages loaded, 31529 targets configured)
+
+Analyzing: target //build:i_build_target (1662 packages loaded, 31644 targets configured)
+
+Analyzing: target //build:i_build_target (1683 packages loaded, 31751 targets configured)
+
+Analyzing: target //build:i_build_target (1704 packages loaded, 31835 targets configured)
+
+Analyzing: target //build:i_build_target (1721 packages loaded, 31903 targets configured)
+
+Analyzing: target //build:i_build_target (1727 packages loaded, 31927 targets configured)
+
+Analyzing: target //build:i_build_target (1728 packages loaded, 31931 targets configured)
+
+Analyzing: target //build:i_build_target (1739 packages loaded, 31975 targets configured)
+
+Analyzing: target //build:i_build_target (1789 packages loaded, 32817 targets configured)
+
+Analyzing: target //build:i_build_target (1893 packages loaded, 37677 targets configured)
+
+Analyzing: target //build:i_build_target (1913 packages loaded, 40375 targets configured)
+
+Analyzing: target //build:i_build_target (1920 packages loaded, 40396 targets configured)
+
+Analyzing: target //build:i_build_target (1934 packages loaded, 40454 targets configured)
+
+Analyzing: target //build:i_build_target (1937 packages loaded, 40467 targets configured)
+
+Analyzing: target //build:i_build_target (1942 packages loaded, 40483 targets configured)
+
+Analyzing: target //build:i_build_target (1946 packages loaded, 41028 targets configured)
+
+Analyzing: target //build:i_build_target (1952 packages loaded, 41046 targets configured)
+
+Analyzing: target //build:i_build_target (1964 packages loaded, 41086 targets configured)
+
+Analyzing: target //build:i_build_target (1969 packages loaded, 41101 targets configured)
+
+Analyzing: target //build:i_build_target (1978 packages loaded, 41130 targets configured)
+
+Analyzing: target //build:i_build_target (1995 packages loaded, 41181 targets configured)
+
+Analyzing: target //build:i_build_target (2012 packages loaded, 41232 targets configured)
+
+Analyzing: target //build:i_build_target (2027 packages loaded, 41279 targets configured)
+
+Analyzing: target //build:i_build_target (2045 packages loaded, 41333 targets configured)
+
+Analyzing: target //build:i_build_target (2062 packages loaded, 41385 targets configured)
