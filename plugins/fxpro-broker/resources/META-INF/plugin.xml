@@ -1,0 +1,44 @@
+<idea-plugin>
+  <id>com.fxpro.broker</id>
+  <name>FXPRO Broker Integration</name>
+  <vendor>ejuu53899-maker</vendor>
+
+  <description><![CDATA[
+    FXPRO Broker integration with MetaTrader 5 and a built-in trading dashboard.
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="FXPRO Dashboard"
+                anchor="right"
+                factoryClass="com.fxpro.broker.FXPRODashboardToolWindowFactory"/>
+  </extensions>
+
+  <actions>
+    <action id="com.fxpro.broker.KickstartAction"
+            class="com.fxpro.broker.KickstartAction"
+            text="Kickstart FXPRO"
+            description="Initialize FXPRO trading environment">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+    <action id="com.fxpro.broker.StartBackendAction"
+            class="com.fxpro.broker.StartBackendAction"
+            text="Start FX Backend"
+            description="Start GenX_FX Backend System">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="com.fxpro.broker.KickstartAction"/>
+    </action>
+    <action id="com.fxpro.broker.ViewLogsAction"
+            class="com.fxpro.broker.ViewLogsAction"
+            text="View FXPRO Logs"
+            description="View IntelliJ IDEA logs for debugging">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="com.fxpro.broker.StartBackendAction"/>
+    </action>
+    <action id="com.fxpro.broker.DeployHostingerAction"
+            class="com.fxpro.broker.DeployHostingerAction"
+            text="Deploy to Hostinger VPS"
+            description="Prepare deployment script for Hostinger VPS">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="com.fxpro.broker.ViewLogsAction"/>
+    </action>
+  </actions>
+</idea-plugin>
