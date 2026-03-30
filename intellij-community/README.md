@@ -45,5 +45,14 @@ Once connected, you can use the following tools through any MCP-compatible AI cl
 - `genx_command(command="START")`: Starts the trading operations.
 - `genx_performance()`: Placeholder for retrieving performance data.
 
+### ⚡ Vite & Bolt Tools
+
+New high-performance tools are available for web development and system checks:
+
+- `vite_dev(path=".")`: Get instructions to start the Vite dev server.
+- `vite_info(path=".")`: Get details about the Vite project configuration.
+- `bolt_ping()`: Perform a lightning-fast connectivity check.
+- `bolt_metrics()`: View high-speed system throughput metrics.
+
 ---
 *Integrated by Jules*
