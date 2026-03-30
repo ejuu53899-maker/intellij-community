@@ -54,5 +54,16 @@ New high-performance tools are available for web development and system checks:
 - `bolt_ping()`: Perform a lightning-fast connectivity check.
 - `bolt_metrics()`: View high-speed system throughput metrics.
 
+## Build Support & Troubleshooting
+
+### Android & HarmonyOS Integration
+The `android-customization` module supports specific hardware targets, including Huawei devices running **HarmonyOS 4.3+**.
+- **Auto-Sync**: Ensure `jpsModelToBazel.cmd` is run after modifying `.iml` files to keep the Bazel build in sync with the IDE.
+- **HMS Core**: The bridge detects `HMS Core` presence for advanced mobile push notifications in the trading system.
+
+### Vercel Deployment
+Web assets managed via `ViteToolset` are optimized for Vercel "Ship" workflows.
+- Use `vite_info` to verify the production base path before triggering a deployment via the terminal toolset.
+
 ---
 *Integrated by Jules*
