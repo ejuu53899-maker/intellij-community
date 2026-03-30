@@ -27,5 +27,7 @@ internal class McpServerSettings : SimplePersistentStateComponent<McpServerSetti
     var enableBraveMode: Boolean by property(false)
     var enableMcpServer: Boolean by property(false)
     var mcpServerPort: Int by property(DEFAULT_MCP_PORT)
+    var genXApiKey: String? by string()
+    var githubToken: String? by string()
   }
 }

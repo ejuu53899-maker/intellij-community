@@ -1,5 +1,5 @@
 <idea-plugin package="com.intellij.mcpserver" allow-bundled-update="true">
-  <name>MCP Server</name>
+  <name>intellij-community</name>
   <id>com.intellij.mcpServer</id>
   <category>AI-Powered</category>
   <description><![CDATA[
