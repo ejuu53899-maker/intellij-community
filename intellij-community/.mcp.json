@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "genx-bridge": {
+      "command": "python3",
+      "args": ["GenX_FX_V4/bridge.py"],
+      "env": {
+        "JULES_API_KEY_V4": "JULES_API_KEY_V4_PLACEHOLDER",
+        "GITHUB_TOKEN_PUSH": "GITHUB_TOKEN_PUSH_PLACEHOLDER"
+      }
+    }
+  }
+}
