@@ -48,7 +48,7 @@ internal class GenXToolset : McpToolset {
     suspend fun genx_command(
         @McpDescription("The command to send: START, STOP, or PAUSE") command: String
     ): String {
-        val settings = McpServerSettings.getInstance().state
+        val settings = McpServerSettings.getInstance()
         val apiKey = settings.genXApiKey ?: mcpFail("JULES_API_KEY_V4 is not configured in MCP settings.")
         val githubToken = settings.githubToken ?: mcpFail("GITHUB_TOKEN_PUSH is not configured in MCP settings.")
 
@@ -71,8 +71,47 @@ internal class GenXToolset : McpToolset {
     }
 
     @McpTool
-    @McpDescription("Retrieves the last logged performance metrics from the GenX bridge.")
+    @McpDescription("Retrieves real-time performance metrics and account summary from the live trading account.")
     suspend fun genx_performance(): String {
-        return "Performance monitoring is active. Check bridge logs for real-time equity and PnL data."
+        val settings = McpServerSettings.getInstance()
+        val apiKey = settings.genXApiKey ?: mcpFail("JULES_API_KEY_V4 is not configured.")
+        val githubToken = settings.githubToken ?: mcpFail("GITHUB_TOKEN_PUSH is not configured.")
+
+        return try {
+            val response: HttpResponse = client.get("$baseUrl/remote/performance") {
+                header(HttpHeaders.Authorization, "Bearer $apiKey")
+                header("X-GitHub-Token", githubToken)
+            }
+            if (response.status == HttpStatusCode.OK) {
+                response.bodyAsText()
+            } else {
+                "Error: Performance bridge returned ${response.status}. Ensure live account is connected."
+            }
+        } catch (e: Exception) {
+            mcpFail("Failed to fetch performance data: ${e.message}")
+        }
+    }
+
+    @McpTool
+    @McpDescription("Pushes the current trading performance and logs to the remote repository using the configured GitHub token.")
+    suspend fun genx_push_performance(): String {
+        val settings = McpServerSettings.getInstance()
+        val apiKey = settings.genXApiKey ?: mcpFail("JULES_API_KEY_V4 is not configured.")
+        val githubToken = settings.githubToken ?: mcpFail("GITHUB_TOKEN_PUSH is not configured.")
+
+        return try {
+            val response: HttpResponse = client.post("$baseUrl/remote/push-performance") {
+                header(HttpHeaders.Authorization, "Bearer $apiKey")
+                header("X-GitHub-Token", githubToken)
+                contentType(ContentType.Application.Json)
+            }
+            if (response.status == HttpStatusCode.OK) {
+                "Performance data successfully pushed to remote repository. 🚀"
+            } else {
+                mcpFail("Failed to push performance: ${response.bodyAsText()}")
+            }
+        } catch (e: Exception) {
+            mcpFail("Push operation failed: ${e.message}")
+        }
     }
 }
