@@ -75,4 +75,15 @@ internal class GenXToolset : McpToolset {
     suspend fun genx_performance(): String {
         return "Performance monitoring is active. Check bridge logs for real-time equity and PnL data."
     }
+
+    @McpTool
+    @McpDescription("Starts the GenX trading system by initializing the bridge and sending the START command.")
+    suspend fun start_trading(): String {
+        val status = genx_status()
+        if (status.contains("Error", ignoreCase = true)) {
+            return "Failed to start trading: Bridge status check failed. $status"
+        }
+        val result = genx_command("START")
+        return "GenX Trading System Start Sequence: $result"
+    }
 }

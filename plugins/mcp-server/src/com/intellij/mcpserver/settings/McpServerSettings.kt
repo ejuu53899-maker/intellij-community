@@ -27,12 +27,15 @@ internal class McpServerSettings : SimplePersistentStateComponent<McpServerSetti
 
   var genXApiKey: String?
     get() = PasswordSafe.instance.getPassword(GENX_API_KEY_ATTRIBUTES)
+      ?: System.getenv("JULES_API_KEY_V4")
+      ?: System.getenv("BOLT_API_KEY_3")
     set(value) {
       PasswordSafe.instance.set(GENX_API_KEY_ATTRIBUTES, Credentials(null, value))
     }
 
   var githubToken: String?
     get() = PasswordSafe.instance.getPassword(GITHUB_TOKEN_ATTRIBUTES)
+      ?: System.getenv("GITHUB_TOKEN_PUSH")
     set(value) {
       PasswordSafe.instance.set(GITHUB_TOKEN_ATTRIBUTES, Credentials(null, value))
     }
