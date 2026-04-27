@@ -1,0 +1,267 @@
+=== 🚀 Kickstarting Live Trading Environment ===
+[1/3] Starting GenX FX Trading Bridge...
+GenX FX Bridge started in background on port 8000.
+[2/3] Initializing MQL5 Cloud Sync Bridge...
+MQL5 Sync Bridge initialization triggered on port 8001.
+[3/3] Starting IntelliJ MCP Server (All-in-One Mode)...
+MCP Server started in background on port 64342.
+=== ✅ All systems are live and ready for Exness Real24 ===
+Access Trading Dashboard: plugins/fxpro-broker/resources/dashboard/index.html
+=== Starting All-in-One Desktop Mode Backend ===
+Backend directory not found. Cloning from Codeberg...
+Cloning into 'all_in_one_backend'...
+INFO: Invocation ID: d2329790-aeaa-4e71-908f-0dd233713fca
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+ERROR: Cannot run target //plugins/mcp-server:mcpserver: Not executable
+INFO: Elapsed time: 10.426s
+INFO: 0 processes.
+ERROR: Build did NOT complete successfully
+ERROR: Build failed. Not running target
+Updating files:  31% (1902/6084)Updating files:  32% (1947/6084)Updating files:  33% (2008/6084)Updating files:  34% (2069/6084)Updating files:  35% (2130/6084)Updating files:  36% (2191/6084)Updating files:  37% (2252/6084)Updating files:  38% (2312/6084)Updating files:  39% (2373/6084)Updating files:  40% (2434/6084)Updating files:  41% (2495/6084)Updating files:  42% (2556/6084)Updating files:  43% (2617/6084)Updating files:  44% (2677/6084)Updating files:  45% (2738/6084)Updating files:  46% (2799/6084)Updating files:  47% (2860/6084)Updating files:  48% (2921/6084)Updating files:  49% (2982/6084)Updating files:  50% (3042/6084)Updating files:  51% (3103/6084)Updating files:  52% (3164/6084)Updating files:  53% (3225/6084)Updating files:  54% (3286/6084)Updating files:  55% (3347/6084)Updating files:  56% (3408/6084)Updating files:  57% (3468/6084)Updating files:  58% (3529/6084)Updating files:  59% (3590/6084)Updating files:  60% (3651/6084)Updating files:  61% (3712/6084)Updating files:  61% (3720/6084)Updating files:  62% (3773/6084)Updating files:  63% (3833/6084)Updating files:  64% (3894/6084)Updating files:  65% (3955/6084)Updating files:  66% (4016/6084)Updating files:  67% (4077/6084)Updating files:  68% (4138/6084)Updating files:  69% (4198/6084)Updating files:  70% (4259/6084)Updating files:  71% (4320/6084)Updating files:  72% (4381/6084)Updating files:  73% (4442/6084)Updating files:  74% (4503/6084)Updating files:  75% (4563/6084)Updating files:  76% (4624/6084)Updating files:  77% (4685/6084)Updating files:  78% (4746/6084)Updating files:  79% (4807/6084)Updating files:  80% (4868/6084)Updating files:  81% (4929/6084)Updating files:  82% (4989/6084)Updating files:  83% (5050/6084)Updating files:  84% (5111/6084)Updating files:  85% (5172/6084)Updating files:  86% (5233/6084)Updating files:  87% (5294/6084)Updating files:  88% (5354/6084)Updating files:  89% (5415/6084)Updating files:  90% (5476/6084)Updating files:  91% (5537/6084)Updating files:  92% (5598/6084)Updating files:  93% (5659/6084)Updating files:  94% (5719/6084)Updating files:  94% (5752/6084)Updating files:  95% (5780/6084)Updating files:  96% (5841/6084)Updating files:  97% (5902/6084)Updating files:  98% (5963/6084)Updating files:  99% (6024/6084)Updating files: 100% (6084/6084)Updating files: 100% (6084/6084), done.
+Creating virtual environment...
+Verifying dependencies...
+Collecting google-api-python-client==2.160.0 (from -r requirements.txt (line 1))
+  Downloading google_api_python_client-2.160.0-py2.py3-none-any.whl.metadata (6.7 kB)
+Collecting google-auth==2.36.0 (from -r requirements.txt (line 2))
+  Downloading google_auth-2.36.0-py2.py3-none-any.whl.metadata (4.7 kB)
+Collecting google-auth-httplib2==0.2.0 (from -r requirements.txt (line 3))
+  Downloading google_auth_httplib2-0.2.0-py2.py3-none-any.whl.metadata (2.2 kB)
+Collecting google-auth-oauthlib==1.2.1 (from -r requirements.txt (line 4))
+  Downloading google_auth_oauthlib-1.2.1-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting msal==1.34.0 (from -r requirements.txt (line 5))
+  Downloading msal-1.34.0-py3-none-any.whl.metadata (11 kB)
+Collecting requests==2.32.5 (from -r requirements.txt (line 6))
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting tqdm==4.66.4 (from -r requirements.txt (line 7))
+  Downloading tqdm-4.66.4-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 1.2 MB/s eta 0:00:00
+Collecting openpyxl==3.1.5 (from -r requirements.txt (line 8))
+  Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting firebase-admin==7.1.0 (from -r requirements.txt (line 9))
+  Downloading firebase_admin-7.1.0-py3-none-any.whl.metadata (1.7 kB)
+Collecting httplib2<1.dev0,>=0.19.0 (from google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading httplib2-0.31.2-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5 (from google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading google_api_core-2.30.3-py3-none-any.whl.metadata (3.1 kB)
+Collecting uritemplate<5,>=3.0.1 (from google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading uritemplate-4.2.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth==2.36.0->-r requirements.txt (line 2))
+  Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth==2.36.0->-r requirements.txt (line 2))
+  Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth==2.36.0->-r requirements.txt (line 2))
+  Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib==1.2.1->-r requirements.txt (line 4))
+  Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting PyJWT<3,>=1.0.0 (from PyJWT[crypto]<3,>=1.0.0->msal==1.34.0->-r requirements.txt (line 5))
+  Downloading pyjwt-2.12.1-py3-none-any.whl.metadata (4.1 kB)
+Collecting cryptography<49,>=2.5 (from msal==1.34.0->-r requirements.txt (line 5))
+  Downloading cryptography-47.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests==2.32.5->-r requirements.txt (line 6))
+  Downloading charset_normalizer-3.4.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 kB 4.4 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests==2.32.5->-r requirements.txt (line 6))
+  Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
+Collecting urllib3<3,>=1.21.1 (from requests==2.32.5->-r requirements.txt (line 6))
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests==2.32.5->-r requirements.txt (line 6))
+  Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting et-xmlfile (from openpyxl==3.1.5->-r requirements.txt (line 8))
+  Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting cachecontrol>=0.14.3 (from firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Using cached cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting google-cloud-firestore>=2.21.0 (from firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading google_cloud_firestore-2.27.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting google-cloud-storage>=3.1.1 (from firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading google_cloud_storage-3.10.1-py3-none-any.whl.metadata (15 kB)
+Collecting httpx==0.28.1 (from httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting anyio (from httpx==0.28.1->httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting httpcore==1.* (from httpx==0.28.1->httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h2<5,>=3 (from httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading h2-4.3.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx==0.28.1->httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from cachecontrol>=0.14.3->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Using cached msgpack-1.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting cffi>=2.0.0 (from cryptography<49,>=2.5->msal==1.34.0->-r requirements.txt (line 5))
+  Using cached cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Collecting googleapis-common-protos<2.0.0,>=1.63.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading googleapis_common_protos-1.74.0-py3-none-any.whl.metadata (9.2 kB)
+Collecting protobuf<8.0.0,>=4.25.8 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading protobuf-7.34.1-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Collecting proto-plus<2.0.0,>=1.22.3 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading proto_plus-1.27.2-py3-none-any.whl.metadata (2.2 kB)
+Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]<3.0.0dev,>=2.25.1; platform_python_implementation != "PyPy"->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading grpcio-1.80.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]<3.0.0dev,>=2.25.1; platform_python_implementation != "PyPy"->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading grpcio_status-1.80.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting google-cloud-core<3.0.0,>=2.0.0 (from google-cloud-firestore>=2.21.0->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading google_cloud_core-2.5.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting google-resumable-media<3.0.0,>=2.7.2 (from google-cloud-storage>=3.1.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading google_resumable_media-2.8.2-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-crc32c<2.0.0,>=1.1.3 (from google-cloud-storage>=3.1.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading google_crc32c-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl.metadata (1.7 kB)
+Collecting pyparsing<4,>=3.1 (from httplib2<1.dev0,>=0.19.0->google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth==2.36.0->-r requirements.txt (line 2))
+  Downloading pyasn1-0.6.3-py3-none-any.whl.metadata (8.4 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib==1.2.1->-r requirements.txt (line 4))
+  Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography<49,>=2.5->msal==1.34.0->-r requirements.txt (line 5))
+  Using cached pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting typing-extensions~=4.12 (from grpcio<2.0.0,>=1.33.2->google-api-core[grpc]<3.0.0dev,>=2.25.1; platform_python_implementation != "PyPy"->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting protobuf<8.0.0,>=4.25.8 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.160.0->-r requirements.txt (line 1))
+  Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.1 (from h2<5,>=3->httpx[http2]==0.28.1->firebase-admin==7.1.0->-r requirements.txt (line 9))
+  Downloading hpack-4.1.0-py3-none-any.whl.metadata (4.6 kB)
+Downloading google_api_python_client-2.160.0-py2.py3-none-any.whl (12.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 29.0 MB/s eta 0:00:00
+Downloading google_auth-2.36.0-py2.py3-none-any.whl (209 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 kB 24.6 MB/s eta 0:00:00
+Downloading google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)
+Downloading google_auth_oauthlib-1.2.1-py2.py3-none-any.whl (24 kB)
+Downloading msal-1.34.0-py3-none-any.whl (116 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.0/117.0 kB 17.1 MB/s eta 0:00:00
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading tqdm-4.66.4-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 11.7 MB/s eta 0:00:00
+Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.9/250.9 kB 29.5 MB/s eta 0:00:00
+Downloading firebase_admin-7.1.0-py3-none-any.whl (137 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.1/137.1 kB 22.3 MB/s eta 0:00:00
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 20.7 MB/s eta 0:00:00
+Downloading charset_normalizer-3.4.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (216 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.6/216.6 kB 29.4 MB/s eta 0:00:00
+Downloading cryptography-47.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 26.4 MB/s eta 0:00:00
+Downloading google_api_core-2.30.3-py3-none-any.whl (173 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.3/173.3 kB 15.4 MB/s eta 0:00:00
+Downloading google_cloud_firestore-2.27.0-py3-none-any.whl (429 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 429.8/429.8 kB 35.0 MB/s eta 0:00:00
+Downloading google_cloud_storage-3.10.1-py3-none-any.whl (324 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 324.5/324.5 kB 38.3 MB/s eta 0:00:00
+Downloading httplib2-0.31.2-py3-none-any.whl (91 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.1/91.1 kB 10.3 MB/s eta 0:00:00
+Downloading idna-3.13-py3-none-any.whl (68 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.6/68.6 kB 10.6 MB/s eta 0:00:00
+Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 kB 24.6 MB/s eta 0:00:00
+Downloading pyjwt-2.12.1-py3-none-any.whl (29 kB)
+Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+Downloading uritemplate-4.2.0-py3-none-any.whl (11 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Using cached cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+Downloading google_cloud_core-2.5.1-py3-none-any.whl (29 kB)
+Downloading google_crc32c-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl (33 kB)
+Downloading google_resumable_media-2.8.2-py3-none-any.whl (81 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.5/81.5 kB 11.1 MB/s eta 0:00:00
+Downloading googleapis_common_protos-1.74.0-py3-none-any.whl (300 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 300.7/300.7 kB 26.1 MB/s eta 0:00:00
+Downloading grpcio-1.80.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 23.5 MB/s eta 0:00:00
+Downloading grpcio_status-1.80.0-py3-none-any.whl (14 kB)
+Downloading h2-4.3.0-py3-none-any.whl (61 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.8/61.8 kB 7.1 MB/s eta 0:00:00
+Using cached msgpack-1.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (427 kB)
+Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.1/160.1 kB 20.3 MB/s eta 0:00:00
+Downloading proto_plus-1.27.2-py3-none-any.whl (50 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.5/50.5 kB 7.2 MB/s eta 0:00:00
+Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 323.4/323.4 kB 37.1 MB/s eta 0:00:00
+Downloading pyasn1-0.6.3-py3-none-any.whl (83 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.0/84.0 kB 11.5 MB/s eta 0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.8/122.8 kB 16.1 MB/s eta 0:00:00
+Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.4/114.4 kB 14.5 MB/s eta 0:00:00
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading hpack-4.1.0-py3-none-any.whl (34 kB)
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached pycparser-3.0-py3-none-any.whl (48 kB)
+Installing collected packages: urllib3, uritemplate, typing-extensions, tqdm, pyparsing, PyJWT, pycparser, pyasn1, protobuf, oauthlib, msgpack, idna, hyperframe, hpack, h11, google-crc32c, et-xmlfile, charset_normalizer, certifi, cachetools, rsa, requests, pyasn1-modules, proto-plus, openpyxl, httplib2, httpcore, h2, grpcio, googleapis-common-protos, google-resumable-media, cffi, anyio, requests-oauthlib, httpx, grpcio-status, google-auth, cryptography, cachecontrol, google-auth-oauthlib, google-auth-httplib2, google-api-core, msal, google-cloud-core, google-api-python-client, google-cloud-storage, google-cloud-firestore, firebase-admin
+Successfully installed PyJWT-2.12.1 anyio-4.13.0 cachecontrol-0.14.4 cachetools-5.5.2 certifi-2026.4.22 cffi-2.0.0 charset_normalizer-3.4.7 cryptography-47.0.0 et-xmlfile-2.0.0 firebase-admin-7.1.0 google-api-core-2.30.3 google-api-python-client-2.160.0 google-auth-2.36.0 google-auth-httplib2-0.2.0 google-auth-oauthlib-1.2.1 google-cloud-core-2.5.1 google-cloud-firestore-2.27.0 google-cloud-storage-3.10.1 google-crc32c-1.8.0 google-resumable-media-2.8.2 googleapis-common-protos-1.74.0 grpcio-1.80.0 grpcio-status-1.80.0 h11-0.16.0 h2-4.3.0 hpack-4.1.0 httpcore-1.0.9 httplib2-0.31.2 httpx-0.28.1 hyperframe-6.1.0 idna-3.13 msal-1.34.0 msgpack-1.1.2 oauthlib-3.3.1 openpyxl-3.1.5 proto-plus-1.27.2 protobuf-6.33.6 pyasn1-0.6.3 pyasn1-modules-0.4.2 pycparser-3.0 pyparsing-3.3.2 requests-2.32.5 requests-oauthlib-2.0.0 rsa-4.9.1 tqdm-4.66.4 typing-extensions-4.15.0 uritemplate-4.2.0 urllib3-2.6.3
+Launching API main application...
+Collecting uvicorn
+  Downloading uvicorn-0.46.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting click>=7.0 (from uvicorn)
+  Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: h11>=0.8 in ./venv/lib/python3.12/site-packages (from uvicorn) (0.16.0)
+Downloading uvicorn-0.46.0-py3-none-any.whl (70 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.9/70.9 kB 3.1 MB/s eta 0:00:00
+Downloading click-8.3.3-py3-none-any.whl (110 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.5/110.5 kB 7.3 MB/s eta 0:00:00
+Installing collected packages: click, uvicorn
+Successfully installed click-8.3.3 uvicorn-0.46.0
+Traceback (most recent call last):
+  File "/app/all_in_one_backend/venv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/click/core.py", line 1514, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/click/core.py", line 1435, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/click/core.py", line 1298, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/click/core.py", line 853, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/main.py", line 441, in main
+    run(
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/main.py", line 617, in run
+    server.run()
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 449, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/app/all_in_one_backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/app/all_in_one_backend/api/main.py", line 10, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
