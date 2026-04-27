@@ -4,7 +4,7 @@
 
 set -e
 
-echo "=== Deploying to Hostinger VPS ==="
+echo "=== Deploying to VPS Jakarta 03 ==="
 
 # 1. Update System
 echo "[1/6] Updating system packages..."

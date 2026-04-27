@@ -1,7 +1,7 @@
 //+------------------------------------------------------------------+
 //|  GenX FX - Exness MT5 EA                                        |
 //|  Broker  : exness_mt5real24                                     |
-//|  Account : Real Live Account                                    |
+//|  Account : 603979284                                            |
 //|  Connects to GenX dashboard via HTTP REST API                   |
 //|  Version : 3.0                                                  |
 //+------------------------------------------------------------------+
@@ -18,7 +18,7 @@
 //--- Server settings (edit ServerURL to match your backend URL)
 input string   ServerURL        = "http://localhost:8000"; // Dashboard server URL
 input string   BrokerID         = "exness";                  // Broker identifier
-input string   AccountNumber    = "RealAccount";             // MT5 account number
+input string   AccountNumber    = "603979284";               // MT5 account number
 input string   BrokerServer     = "exness_mt5real24";        // Broker server name
 
 //--- Trading settings
