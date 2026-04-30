@@ -11,6 +11,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install pandas fastapi uvicorn redis pydantic-settings > /dev/null 2>&1
 export TESTING=true
+export PYTHONPATH=\$PYTHONPATH:.
 uvicorn api.main:app --host 0.0.0.0 --port 8000 > ../backend.log 2>&1 &
 cd ..
 
