@@ -26,3 +26,5 @@ stale_outputs_checked
 /android
 all_in_one_backend/venv
 mouy-git
+mouy-git/
+temp-git/
