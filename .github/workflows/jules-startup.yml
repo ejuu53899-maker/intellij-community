@@ -1,0 +1,53 @@
+name: Jules Automated Startup & CI/CD
+on:
+  push:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  startup-and-verify:
+    name: Jules Startup and Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev zlib1g-dev gettext python3-venv
+
+      - name: Run Kickstart
+        run: bash ./intelligence-idx/kickstart.sh
+
+      - name: Start Trading Backend
+        run: |
+          # The remote.py file is already included in the workspace via Jules' setup
+          cd all_in_one_backend
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install pandas fastapi uvicorn redis pydantic-settings
+
+          # The api/main.py registration is also part of the committed code
+
+          export TESTING=true
+          uvicorn api.main:app --host 0.0.0.0 --port 8000 &
+          sleep 15
+          curl -v http://localhost:8000/remote/status
+
+      - name: Setup mouy-git
+        run: |
+          git clone https://github.com/Mouy-leng172/git.git mouy-git
+
+      - name: Build git.git (mouy-git)
+        run: |
+          cd mouy-git
+          make -j$(nproc)
+          ./git --version
+
+      - name: Production Plugin Build
+        run: |
+          echo "Environment ready for Production Build."
+          # ./intelligence-idx/production.sh
