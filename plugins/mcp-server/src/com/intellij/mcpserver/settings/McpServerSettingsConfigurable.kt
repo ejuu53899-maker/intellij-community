@@ -200,6 +200,15 @@ class McpServerSettingsConfigurable : SearchableConfigurable {
           checkBox(McpServerBundle.message("checkbox.enable.brave.mode.skip.command.execution.confirmations")).comment(McpServerBundle.message("text.warning.enabling.brave.mode.will.allow.terminal.commands.to.execute.without.confirmation.use.with.caution")).bindSelected(settings.state::enableBraveMode)
         }
       }.visibleIf(enabledCheckboxState!!)
+
+      group(McpServerBundle.message("settings.genx.group")) {
+        row(McpServerBundle.message("settings.genx.api.key")) {
+          passwordField().bindText({ settings.genXApiKey.orEmpty() }, { settings.genXApiKey = it })
+        }
+        row(McpServerBundle.message("settings.genx.github.token")) {
+          passwordField().bindText({ settings.githubToken.orEmpty() }, { settings.githubToken = it })
+        }
+      }.visibleIf(enabledCheckboxState!!)
     }
 
     settingsPanel = panel

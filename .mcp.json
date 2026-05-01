@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "intellij-community": {
+      "command": "sh",
+      "args": ["-c", "./intelligence-idx/kickstart.sh && ./bazel.cmd run //plugins/mcp-server:mcpserver"],
+      "env": {
+        "JULES_API_KEY_V4": "",
+        "GITHUB_TOKEN_PUSH": ""
+      }
+    },
+    "genx-bridge": {
+      "command": "python3",
+      "args": ["-u", "GenX_FX_V4/bridge.py"],
+      "env": {
+        "PORT": "8000"
+      }
+    },
+    "mql5-bridge": {
+      "command": "python3",
+      "args": ["-u", "MQL5_Sync/bridge.py"],
+      "env": {
+        "PORT": "8001"
+      }
+    }
+  }
+}

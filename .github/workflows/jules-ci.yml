@@ -1,0 +1,111 @@
+name: CI
+
+on: [push, pull_request, workflow_dispatch]
+
+env:
+  DEVELOPER: 1
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci-config:
+    name: config
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: yes
+    steps:
+      - run: echo "enabled=yes" >> $GITHUB_OUTPUT
+
+  build:
+    name: build and test
+    needs: ci-config
+    if: needs.ci-config.outputs.enabled == 'yes'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-14]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Support longpaths (Windows)
+        if: runner.os == 'Windows'
+        run: git config --global core.longpaths true
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: Mouy-leng172/git
+          path: git-source
+
+      - name: Install dependencies (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev zlib1g-dev gettext make gcc
+
+      - name: Install dependencies (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          brew install gettext
+          brew link --force gettext
+
+      - name: Build
+        working-directory: git-source
+        run: |
+          make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu)
+
+      - name: Run Basic Tests
+        working-directory: git-source
+        run: |
+          # Running a subset of tests to verify the build works without long wait
+          ./git version
+          make -C t TTESTS=t0001-init.sh prove
+
+  dockerized:
+    name: linux-docker-build
+    needs: ci-config
+    if: needs.ci-config.outputs.enabled == 'yes'
+    runs-on: ubuntu-latest
+    container: ubuntu:rolling
+    steps:
+      - name: Install git and build essentials
+        run: |
+          apt-get update
+          apt-get install -y git make gcc libcurl4-openssl-dev libssl-dev zlib1g-dev gettext sudo
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: Mouy-leng172/git
+          path: git-source
+
+      - name: Build
+        working-directory: git-source
+        run: |
+          make -j$(nproc)
+          ./git --version
+
+  static-analysis:
+    name: static-analysis
+    needs: ci-config
+    if: needs.ci-config.outputs.enabled == 'yes'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: Mouy-leng172/git
+          path: git-source
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y coccinelle libcurl4-openssl-dev libssl-dev libexpat-dev gettext make
+
+      - name: Run Sparse
+        working-directory: git-source
+        run: |
+          sudo apt-get install -y sparse
+          make sparse
+# Trigger run Fri May  1 05:07:43 UTC 2026
